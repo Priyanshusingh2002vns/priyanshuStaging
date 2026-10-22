@@ -197,6 +197,52 @@
  }
 
  /* Default (desktop/tablet) */
+ /* Ensure React-Bootstrap modals backdrop and centering work with bootstrap-grid */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1055;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 1.75rem auto;
+  pointer-events: none;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 3.5rem);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+  pointer-events: auto;
+}
+
+
  .success-interest-modal .modal-dialog {
    max-width: 500px;
    margin: 1.75rem auto;

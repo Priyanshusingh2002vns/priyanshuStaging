@@ -18,6 +18,10 @@ import dynamic from "next/dynamic";
 const SectionPlaceholder = () => (
   <div style={{ minHeight: "250px", opacity: 0.05 }} />
 );
+
+const HomeComponent = dynamic(() => import("./components/home/home"), {
+  loading: () => <SectionPlaceholder />,
+});
 // seleton holder
 const FillEquityMarket = dynamic(() => import("./new-landing/fillequitymarket.module.css/FillEquityMarket"),
   { loading: () => <SectionPlaceholder />, ssr: true });
