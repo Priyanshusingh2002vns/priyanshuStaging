@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 import { getRobotsDirectives, checkIsStaging } from "./utils/seoUtils";
-import HomeComponent from "./components/home/home";
+// import HomeComponent from "./components/home/home";
 // import LandingPage from "./components/LandingPage/LandingPage";
 import HeroBanner from "./new-landing/fillequitymarket.module.css/HeroBanner";
 // import FillEquityMarket from "./new-landing/fillequitymarket.module.css/FillEquityMarket";
@@ -79,7 +79,7 @@ const ensureTitleLength = (text) => {
   const suffix = " | PrEqt Platform";
   const padded = `${base}${suffix}`;
   return padded.length >= 25 ? padded : `${padded} - Private Equity`;
-};    
+};
 
 export const revalidate = 300;
 
@@ -240,7 +240,7 @@ export default async function Page() {
   return (
     <>
       {/* {for fast ind} */}
-      <link rel="preload" as="image" href="/thumbnailhero.webp" fetchPriority="high"/>
+      <link rel="preload" as="image" href="/thumbnailhero.webp" fetchPriority="high" />
       {/* {for fast end} */}
       <script
         type="application/ld+json"
