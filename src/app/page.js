@@ -30,15 +30,15 @@ const DealFlow = dynamic(() => import("./new-landing/fillequitymarket.module.css
 const DealsMatter = dynamic(() => import("./new-landing/fillequitymarket.module.css/dealsMatter"),
   { loading: () => <SectionPlaceholder />, ssr: true });
 const Pillar = dynamic(() => import("./new-landing/fillequitymarket.module.css/Pillar"),
-  { loading: () => <SectionPlaceholder />, ssr: true });
+  { loading: () => <SectionPlaceholder />, ssr: false });
 const ScrollShowcase = dynamic(() => import("./new-landing/ScrollShowcase"),
-  { loading: () => <SectionPlaceholder />, ssr: true });
+  { loading: () => <SectionPlaceholder />, ssr:false });
 const Investors = dynamic(() => import("./new-landing/fillequitymarket.module.css/Investors"),
-  { loading: () => <SectionPlaceholder />, ssr: true });
+  { loading: () => <SectionPlaceholder />, ssr: false });
 const BenefitSection = dynamic(() => import("./new-landing/fillequitymarket.module.css/BenefitSection"),
-  { loading: () => <SectionPlaceholder />, ssr: true });
+  { loading: () => <SectionPlaceholder />, ssr: false });
 const NetworkGlobal = dynamic(() => import("./new-landing/fillequitymarket.module.css/NetworkGlobal"),
-  { loading: () => <SectionPlaceholder />, ssr: true });
+  { loading: () => <SectionPlaceholder />, ssr: false });
 
 
 
